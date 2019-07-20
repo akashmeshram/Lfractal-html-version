@@ -17,15 +17,27 @@ The recursive nature of the L-system rules leads to self-similarity and thereby 
 
 ## Usage <a name = "usage"></a>
 Following character have geometric interpretation.
-```
-```
+
+|Character  |      Meaning|
+| ------------- |:-------------:| 
+|   F	      |     Move forward by line length drawing a line|
+|   f	      |     Move forward by line length without drawing a line|
+|   +	      |     Turn left by turning angle|
+|   -	      |     Turn right by turning angle|
+|   \|	      |     Reverse direction (ie: turn by 180 degrees)|
+|   \[       |      Push current drawing state onto stack|
+|   \]	      |     Pop current drawing state from the stack|
+  
 Change the following parameters to get different systems
-- `AXIOM`  - initial string 
-- `RULES`  - rewriting rule
-- `STARTX` - canvas starting width position
-- `STARTY` - canvas starting height position
-- `LENGTH` - step size
-- `ANGLE`  - degree of direction change
+
+|Parameters| Meaning|
+| ------------- |:-------------:| 
+| `AXIOM`  | initial string |
+| `RULES`  | rewriting rule|
+| `STARTX` | canvas starting width position|
+| `STARTY` | canvas starting height position|
+| `LENGTH` | step size|
+| `ANGLE`  | degree of direction change|
 
 Then increase (or decrease) `ITERATIONS` to get next iteration
 
