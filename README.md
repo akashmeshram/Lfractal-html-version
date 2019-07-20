@@ -6,6 +6,7 @@
 - [Usage](#usage)
 - [Author](#authors)
 - [References](#references)
+- [License](#license)
 
 ## About <a name = "about"></a>
 An  L-system is a parallel string rewriting system. A string rewriting system consists of an initial string, called the seed, and a set of rules for specifying how the symbols in a string are rewritten as (replaced by) strings. 
@@ -45,7 +46,11 @@ Then increase (or decrease) `ITERATIONS` to get next iteration
 ## Author <a name = "authors"></a>
 - [Akash Meshram](https://github.com/akashmeshram) 
 
-## References
+## References <a name = "references"></a>
 - Grzegorz Rozenberg and Arto Salomaa. The mathematical theory of L systems (Academic Press, New York, 1980).
 - Przemysław Prusinkiewicz, Aristid Lindenmayer – The Algorithmic Beauty of Plants.
 - Kari, Lila; Rozenberg, Grzegorz; Salomaa, Arto (1997). "L Systems".
+
+## License <a name = "license"></a>
+Copyright © 2019 [Akash Meshram](https://github.com/akashmeshram).<br />
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
