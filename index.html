@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L-System Generator</title>
+
+	<link rel="stylesheet" href="main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div style="display: flex; background: url('./image.jpg');">
+		<div id="leftSidebar" >
+				<div class="lHead">
+					Settings
+				</div>
+				<div class="lItem" style="display: none;">Factor <br/>
+					<input type="number" id="factor" value="0.5" min="0.1" max="2" onchange="setup()">
+				</div>
+				<div class="lItem">Axiom <br/>
+					<input type="text" id="axiom" value="FF" onchange="setup()">
+				</div>
+				<div class="lItem">Rules <br/>
+					<input type="text" id="rule1" value="F=F"  onchange="setup()">
+					<input type="text" id="rule2" value="X=FX"  onchange="setup()">
+				</div>
+				<div class="lItem">StartX <br/>
+					<input type="number" id="startx" min="0" max="800" step="25" value="400"  onchange="setup()">
+				</div>
+				<div class="lItem">StartY <br/>
+					<input type="number" id="starty" min="0" max="800" step="25" value="800" onchange="setup()">
+				</div>				
+				<div class="lItem">Length <br/>
+					<input type="number" id="len" min="100" max="60000" step="50" value="300" onchange="setup()">
+				</div>
+				<div class="lItem">Angle <br/>
+					<input type="number" id="angle" min="5" max="150" step="1" value="60" onchange="setup()">
+				</div>
+				<div class="lItem" style="display: none;">Thickness <br/>
+					<input type="number" id="thickness" min ="1" max="5" step="1" value="2" onchange="setup()">
+				</div>
+				<div class="lItem">Iterations <br/>
+					<div class="number-input">
+						<button onclick="this.parentNode.querySelector('input[type=number]').stepDown(); setup();" ></button>
+						<input class="quantity" id="iterations" min="0" name="quantity" value="1" type="number">
+						<button onclick="this.parentNode.querySelector('input[type=number]').stepUp(); setup();" class="plus"></button>
+					</div>
+					<!-- <input type="number" id="iterations" min="1" max="15" step="1" value="1" onchange="setup()"> -->
+				</div>
+		</div>		
+
+		<div id="mainDiv"></div>
+
+		<div id="rightSidebar">
+				<div class="lHead">
+					Patterns
+				</div>
+		</div>		
+	</div>
+</body>
+<script src="Lsystem.js"></script>
+<script src="Pattern.js"></script>
+<script src="App.js"></script>
+</html>
