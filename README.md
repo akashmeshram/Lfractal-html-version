@@ -1,4 +1,5 @@
 # Lindenmayer-System-Generator
+<p align="center"><img src="./Annotation.png"></p>
 
 ##  Table of Contents
 - [About](#about)
