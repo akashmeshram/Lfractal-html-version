@@ -1,4 +1,4 @@
-# Lindenmayer-System-Generator
+# Lfractal
 <p align="center"><img src="./Annotation.png"></p>
 
 ##  Table of Contents
